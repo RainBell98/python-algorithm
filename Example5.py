@@ -6,5 +6,6 @@ for co in combinations(height,7):
         #print(sorted(co))
         for height in sorted(co):
             print(height)
+        break
 
 
