@@ -19,9 +19,9 @@ def dfs(now):
 
 for i in range(N):
     if not chk[i]:
-    ans += 1
-    chk[i] = True
-    dfs(i)
+        ans += 1
+        chk[i] = True
+        dfs(i)
 
 
 print(ans)
