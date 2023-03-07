@@ -1,0 +1,11 @@
+a=input()
+b=a.count("c=")
+c=a.count("c-")
+e=a.count("dz=")
+f=a.count("lj")
+g=a.count("nj")
+h=a.count("s=")
+i=a.count("z=")
+j=a.count("d-")
+
+print(len(a)-b-c-e-f-g-h-i-j)
