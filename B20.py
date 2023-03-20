@@ -10,7 +10,7 @@ while True :
             stack.append(i)
         elif i == ']' :
             if len(stack) != 0 and stack[-1] == '[' :
-                stack.pop() # 맞으면 지워서 stack을 비워줌 0 = yes
+                stack.pop() 
             else :
                 stack.append(']')
                 break
