@@ -1,0 +1,6 @@
+N = int(input())
+a = int(N/1000)
+b = int((N-a*1000)/100)
+c = int((N-a*1000-b*100)/10)
+d = int((N-a*1000-b*100-c*10))
+print(a+b+c+d)
