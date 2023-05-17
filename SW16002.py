@@ -9,10 +9,13 @@ for i in range(N):
     n = int(input())
     x = 0
     y = 0
-    for x in range(1,1000000001):
-        for y in range(1,1000000001):
-            if is_Prime(x) == False and is_Prime(y) == False:
-                if x-y == n:
-                    print(x,y)
-                    break
+    k = []
+    for j in range(1,1000000001):
+        if is_Prime(j) == False:
+            k.append(j)
+    for x in k:
+        for y in k:
+            if x-y == n:
+                print(x,y)
+                break
         break
