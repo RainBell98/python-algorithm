@@ -1,5 +1,6 @@
+import collections
 def solution(participant,completion):
-    for finish in participant:
-        if finish in completion:
-            participant.remove(finish)
-    return participant[0]
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    answer = list(answer)
+    return answer[0]
+print(solution(["leo", "kiki", "eden"],["eden", "kiki"]))
