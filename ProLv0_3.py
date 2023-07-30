@@ -1,0 +1,16 @@
+
+def solution(my_string, n):
+    answer = ''
+    my_string = list(my_string)
+    my_string.reverse()
+    k = ""
+    for i in range(n):
+        answer+= my_string[i]
+    answer = list(answer)
+    answer.reverse()
+    for i in answer:
+        k+=i
+    return k
+
+def solution(my_string, letter):
+    return my_string.replace(letter,"")
